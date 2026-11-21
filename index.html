@@ -3,74 +3,180 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>My Business</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NO FEAR | Men's Fashion</title>
+
 <style>
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
-  background: #f1f5f9;
-  color: #1e293b;
-  text-align: center;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background: #090909;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
 header {
-  background: #0f172a;
-  color: white;
-  padding: 25px;
+  padding: 25px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #292929;
 }
+
+.logo {
+  font-size: 27px;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 13px;
+}
+
 .hero {
-  padding: 70px 15px;
-  background: #dbeafe;
+  min-height: 75vh;
+  padding: 100px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(90deg, #080808, #171717);
 }
-h1 { color: #2563eb; }
-section { padding: 35px 15px; }
-.card {
-  background: white;
-  padding: 25px;
-  margin: 15px auto;
-  max-width: 300px;
-  border-radius: 12px;
+
+.hero p {
+  color: #aaa;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
 }
+
+.hero h1 {
+  font-size: clamp(55px, 12vw, 110px);
+  line-height: 0.95;
+  letter-spacing: -4px;
+}
+
+.hero h2 {
+  color: #aaa;
+  font-size: 18px;
+  margin-top: 25px;
+  font-weight: normal;
+}
+
+section {
+  padding: 70px 8%;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 35px;
+  letter-spacing: 2px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.design {
+  background: #171717;
+  border: 1px solid #292929;
+  padding: 12px;
+}
+
+.design img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  background: #252525;
+}
+
+.design h3 {
+  margin-top: 15px;
+}
+
+.design p {
+  color: #999;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.about {
+  background: #141414;
+  color: #bbb;
+  line-height: 1.8;
+}
+
 footer {
-  background: #0f172a;
-  color: white;
-  padding: 20px;
+  padding: 30px;
+  text-align: center;
+  color: #777;
+  border-top: 1px solid #292929;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<h2>MY BUSINESS</h2>
-<p>Your Trusted Business Partner</p>
+  <div class="logo">NO FEAR.</div>
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#designs">DESIGNS</a>
+    <a href="#about">ABOUT</a>
+  </nav>
 </header>
 
-<div class="hero">
-<h1>Welcome to My Business!</h1>
-<p>Quality Products. Excellent Services.</p>
+<div class="hero" id="home">
+  <p>MEN'S FASHION / NEW VISION</p>
+  <h1>NO<br>FEAR.</h1>
+  <h2>Wear Your Confidence. Define Your Style.</h2>
 </div>
 
-<section>
-<h2>About Us</h2>
-<p>Welcome to our business website.</p>
+<section id="designs">
+  <h2 class="section-title">OUR DESIGNS</h2>
+
+  <div class="gallery">
+    <div class="design">
+      <img src="images/design1.jpg" alt="Formal wear design">
+      <h3>FORMAL WEAR</h3>
+      <p>Modern elegance and classic style.</p>
+    </div>
+
+    <div class="design">
+      <img src="images/design2.jpg" alt="Streetwear design">
+      <h3>STREETWEAR</h3>
+      <p>Bold looks for everyday expression.</p>
+    </div>
+
+    <div class="design">
+      <img src="images/design3.jpg" alt="Traditional fashion design">
+      <h3>TRADITIONAL</h3>
+      <p>Culture meets modern fashion.</p>
+    </div>
+  </div>
 </section>
 
-<section>
-<h2>Our Services</h2>
-<div class="card">
-<h3>Quality Service</h3>
-<p>We provide reliable services.</p>
-</div>
-</section>
-
-<section>
-<h2>Contact Us</h2>
-<p>Email: yourbusiness@example.com</p>
+<section class="about" id="about">
+  <h2 class="section-title">ABOUT NO FEAR</h2>
+  <p>
+    NO FEAR is a men's fashion design showcase.
+    Explore original ideas, creative outfits and
+    modern styles. This website is made to display
+    fashion designs for visitors to enjoy.
+  </p>
 </section>
 
 <footer>
-<p>© 2026 My Business</p>
+  © 2026 NO FEAR. ALL RIGHTS RESERVED.
 </footer>
 
 </body>
 </html>
+
